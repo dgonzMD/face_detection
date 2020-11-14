@@ -1,0 +1,13 @@
+__pycache__/
+build/
+dist/
+faces detected/
+series/
+tensorflow/
+tensorboard_plugin_wit/
+.spec
+.xml
+.pdf
+face detect pil.py
+face recognition.py
+face_detect.py
