@@ -5,9 +5,9 @@ faces detected/
 series/
 tensorflow/
 tensorboard_plugin_wit/
-.spec
-.xml
-.pdf
+*.spec
+*.xml
+*.pdf
 face detect pil.py
 face recognition.py
 face_detect.py
