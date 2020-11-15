@@ -10,7 +10,6 @@ from PIL import Image
 import time
 import cv2
 from mtcnn.mtcnn import MTCNN
-from numba import cuda
 
 os.environ['TF_CUDNN_DETERMINISTIC']='1'
 
@@ -45,8 +44,6 @@ if __name__ == "__main__":
         os.makedirs('faces detected')
 
     for path, subdirs, files in os.walk(root):
-        device = cuda.get_current_device()
-        device.reset()
         if not subdirs:
             starttime = time.time()
             slidename = path.split('/')[-1]
